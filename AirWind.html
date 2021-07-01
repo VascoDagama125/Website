@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Procesor</title>
+  <meta name="description" content="Procesor">
+  <meta name="author" content="Paweł">
+
+  <link rel="stylesheet" href="podstrony.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body class="Procesor">
+ <nav class="menu-activea">
+  <h1>Menu</h1>
+  <ul>
+    <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/stronaG%C5%82owna.html">Strona główna</a></li>
+    <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Fire.html">
+	Płyta główna</a></li>
+    <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/AirWind.html#">Procesor</a></li>
+    <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Water.html#">Karta graficzna</a></li>
+    <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">Pamięć ram</a></li>
+  </ul>
+   <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">
+  Dysk twardy</a></li>
+  </ul>
+  <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">
+  Zasilacz</a></li>
+  </ul>
+   <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">
+  Obudowa komputera</a></li>
+  </ul>
+   <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">Karta sieciowa
+  </a></li>
+  </ul>
+   <li><a href="file:///C:/Users/Pawe%C5%82/Desktop/zadanie%20na%206%20na%20tworzenie%20stron%20internetowych/Earth.html">
+  Karta dźwiękowa</a></li>
+  </ul>
+</nav>
+<main class="three">
+		<section>
+		
+	<h3>Powietrze / wiatr</h3>
+<p>Wiatr – poziomy lub prawie poziomy ruch powietrza względem powierzchni ziemi.
+
+Wiatr wywołany jest przez różnicę ciśnień oraz różnice w ukształtowaniu powierzchni. Termin wiatr jest używany w meteorologii prawie wyłącznie na określenie horyzontalnej składowej wiatru. Istnieje jednak składowa pionowa wiatru i wtedy jest tak nazywana. Wiatr może wiać z obszarów wyższego ciśnienia do obszarów niższego ciśnienia, ale w średnich szerokościach geograficznych, ze względu na siłę Coriolisa, wiatr wieje zazwyczaj równolegle do linii takiego samego ciśnienia (wiatr geostroficzny). Wiatr jest jednym ze składników pogody, w tym celu podaje się prędkość wiatru (w m/s lub km/h) i kierunek, z którego wieje. Należy zachować uwagę przy używaniu terminologii kierunku wiatru: meteorolodzy pod nazwą wiatr zachodni rozumieją wiatr wiejący z zachodu, podczas gdy „zachodni prąd oceaniczny” to prąd płynący na zachód (czyli różnica o 180 stopni w definicji kierunku)</p><br/>
+<h4>Rodzaje wiatru</h4>
+<p class="one">
+<ul><li>Stałe – nie zmieniające swego kierunku w ciągu całego roku.
+		<ul>
+			<li>pasaty</li>
+			<li>antypasaty</li>
+		</ul>
+	</li>
+	<li>Sezonowe (okresowe) – wiatr zmieniający kierunek w cyklu rocznym lub dobowym.
+		<ul>
+			<li>monsun</li>
+		</ul>
+	</li>
+	<li>Zmienne (lokalne) – zmieniające kierunek zależnie od lokalnych układów ośrodków barycznych.
+		<ul>
+			<li>monsun</li>
+			<li>bryza</li>
+			<li>fen</li>
+			<li>wiatr dolinny</li>
+			<li>wiatr górski</li>
+		</ul>
+	</li>
+	<li>Pustynne
+		<ul>
+			<li>harmattan</li>
+			<li>samum</li>
+		</ul>
+	</li>
+		</ul>
+</p>
+<br/>
+		
+		</section>
+		</main>
+  <script>  (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();</script>
+</body>
+</html>
